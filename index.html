@@ -1,1 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sanaullah AI WorkOS — Your AI-Powered Digital Work Operating System.">
+
+    <meta name="theme-color"
+          content="#080808">
+
+    <title>Sanaullah AI WorkOS</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         APP SHELL
+    ====================================================== -->
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar"
+               id="sidebar">
+
+            <!-- Brand -->
+            <div class="brand">
+
+                <div class="brand-mark">
+                    S
+                </div>
+
+                <div class="brand-text">
+                    <strong>Sanaullah</strong>
+                    <span>AI WorkOS</span>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav">
+
+                <!-- Workspace -->
+
+                <p class="nav-label">
+                    WORKSPACE
+                </p>
+
+                <button class="nav-item active"
+                        data-page="dashboard">
+
+                    <span class="nav-icon">⌂</span>
+                    <span>Dashboard</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="assistant">
+
+                    <span class="nav-icon">✦</span>
+                    <span>AI Assistant</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="tasks">
+
+                    <span class="nav-icon">✓</span>
+                    <span>My Tasks</span>
+
+                    <b>3</b>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="projects">
+
+                    <span class="nav-icon">▦</span>
+                    <span>Projects</span>
+
+                </button>
+
+
+                <!-- AI Agents -->
+
+                <p class="nav-label">
+                    AI AGENTS
+                </p>
+
+
+                <button class="nav-item"
+                        data-page="coding">
+
+                    <span class="nav-icon">⌘</span>
+                    <span>Coding Agent</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="web">
+
+                    <span class="nav-icon">◉</span>
+                    <span>Web Agent</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="data">
+
+                    <span class="nav-icon">▤</span>
+                    <span>Excel & Data Agent</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="automation">
+
+                    <span class="nav-icon">⚡</span>
+                    <span>Automation Agent</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="seo">
+
+                    <span class="nav-icon">⌕</span>
+                    <span>SEO Intelligence</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="chatbot">
+
+                    <span class="nav-icon">◌</span>
+                    <span>AI Chatbot Builder</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="research">
+
+                    <span class="nav-icon">⌁</span>
+                    <span>Research Agent</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="visual">
+
+                    <span class="nav-icon">▣</span>
+                    <span>Visual Task Agent</span>
+
+                </button>
+
+
+                <!-- System -->
+
+                <p class="nav-label">
+                    SYSTEM
+                </p>
+
+
+                <button class="nav-item"
+                        data-page="memory">
+
+                    <span class="nav-icon">◈</span>
+                    <span>AI Memory</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="approvals">
+
+                    <span class="nav-icon">⚑</span>
+                    <span>Approvals</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="proof">
+
+                    <span class="nav-icon">▶</span>
+                    <span>Proof & Demo</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        data-page="settings">
+
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar Footer -->
+
+            <div class="sidebar-footer">
+
+                <div class="system-status">
+
+                    <i></i>
+
+                    <span>
+                        AI System
+                    </span>
+
+                    <strong>
+                        Ready
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-mini">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Sanaullah
+                        </strong>
+
+                        <span>
+                            Personal Workspace
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+
+        <main class="main">
+
+
+            <!-- =================================================
+                 TOP BAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <!-- Mobile Menu -->
+
+                <button class="icon-btn menu-btn"
+                        id="menuBtn"
+                        aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
+
+                <!-- Breadcrumb -->
+
+                <div class="breadcrumb">
+
+                    <span>
+                        AI WORKSPACE
+                    </span>
+
+                    <b>
+                        /
+                    </b>
+
+                    <strong id="pageTitle">
+                        Dashboard
+                    </strong>
+
+                </div>
+
+
+                <!-- Top Actions -->
+
+                <div class="top-actions">
+
+
+                    <button class="icon-btn notification-btn"
+                            id="notificationBtn"
+                            aria-label="Notifications">
+
+                        ♢
+
+                        <em>
+                            3
+                        </em>
+
+                    </button>
+
+
+                    <div class="top-profile">
+
+                        <div class="avatar small">
+                            S
+                        </div>
+
+                        <span>
+                            Sanaullah
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 PAGE CONTENT
+            ================================================== -->
+
+            <section class="content"
+                     id="content">
+
+
+                <!-- =================================================
+                     DASHBOARD
+                ================================================== -->
+
+                <div class="page dashboard-page">
+
+
+                    <!-- Hero -->
+
+                    <section class="hero">
+
+
+                        <div class="hero-content">
+
+                            <span class="eyebrow">
+                                PERSONAL AI WORKOS
+                            </span>
+
+
+                            <h1>
+                                Build. Create.
+                                <br>
+                                <span>Automate.</span>
+                            </h1>
+
+
+                            <p>
+                                Give your AI Manager a job.
+                                It can plan the work, choose the
+                                right agents, test the result,
+                                and prepare a delivery package.
+                            </p>
+
+
+                            <div class="hero-actions">
+
+                                <button class="btn primary"
+                                        id="startTask">
+
+                                    ＋ Start AI Task
+
+                                </button>
+
+
+                                <button class="btn secondary"
+                                        data-page="projects">
+
+                                    View Projects →
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- AI Orb -->
+
+                        <div class="hero-orb">
+
+                            <div class="orb-core">
+                                AI
+                            </div>
+
+                            <span class="orbit o1"></span>
+                            <span class="orbit o2"></span>
+                            <span class="orbit o3"></span>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         COMMAND CENTER
+                    ================================================== -->
+
+                    <section class="command-card">
+
+
+                        <div class="command-head">
+
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    COMMAND CENTER
+                                </span>
+
+                                <h2>
+                                    What should I work on?
+                                </h2>
+
+                            </div>
+
+
+                            <span class="ready-dot">
+                                ● AI Ready
+                            </span>
+
+                        </div>
+
+
+                        <textarea
+                            id="commandInput"
+                            placeholder="Example: Build an appointment booking system for a clinic..."></textarea>
+
+
+                        <div class="command-bottom">
+
+
+                            <!-- Quick Commands -->
+
+                            <div class="quick">
+
+                                <button
+                                    data-command="Create a modern business website">
+
+                                    Create Website
+
+                                </button>
+
+
+                                <button
+                                    data-command="Write and test the required code">
+
+                                    Write Code
+
+                                </button>
+
+
+                                <button
+                                    data-command="Research this topic and summarize the findings">
+
+                                    Research
+
+                                </button>
+
+
+                                <button
+                                    data-command="Create a professional social media content plan">
+
+                                    Social Content
+
+                                </button>
+
+                            </div>
+
+
+                            <button class="btn primary"
+                                    id="runCommand">
+
+                                Run Command ↗
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Command Result -->
+
+                        <div class="command-result"
+                             id="commandResult">
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         WORKSPACE OVERVIEW
+                    ================================================== -->
+
+                    <div class="section-head">
+
+
+                        <div>
+
+                            <span class="eyebrow">
+                                OVERVIEW
+                            </span>
+
+                            <h2>
+                                Workspace Activity
+                            </h2>
+
+                        </div>
+
+
+                        <button class="text-btn"
+                                id="activityBtn">
+
+                            View activity →
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Stats -->
+
+                    <div class="stats">
+
+
+                        <div class="stat">
+
+                            <span>
+                                Active Tasks
+                            </span>
+
+                            <strong>
+                                03
+                            </strong>
+
+                            <small>
+                                +12% this week
+                            </small>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <span>
+                                Projects
+                            </span>
+
+                            <strong>
+                                08
+                            </strong>
+
+                            <small>
+                                02 updated today
+                            </small>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <span>
+                                AI Tasks
+                            </span>
+
+                            <strong>
+                                127
+                            </strong>
+
+                            <small>
+                                +24% this month
+                            </small>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <span>
+                                AI Credits
+                            </span>
+
+                            <strong>
+                                92%
+                            </strong>
+
+                            <small>
+                                Available
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         ACTIVE WORK
+                    ================================================== -->
+
+                    <div class="section-head">
+
+
+                        <div>
+
+                            <span class="eyebrow">
+                                IN PROGRESS
+                            </span>
+
+                            <h2>
+                                Active Work
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="work-grid">
+
+
+                        <!-- Coding -->
+
+                        <article class="work-card">
+
+                            <div class="work-icon">
+                                ⌘
+                            </div>
+
+
+                            <div class="work-info">
+
+                                <span>
+                                    Coding Agent
+                                </span>
+
+                                <h3>
+                                    Build AI Dashboard
+                                </h3>
+
+
+                                <div class="progress">
+
+                                    <i style="width:75%"></i>
+
+                                </div>
+
+
+                                <small>
+                                    75% complete
+                                </small>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                •••
+                            </button>
+
+                        </article>
+
+
+
+                        <!-- Research -->
+
+                        <article class="work-card">
+
+                            <div class="work-icon">
+                                ⌁
+                            </div>
+
+
+                            <div class="work-info">
+
+                                <span>
+                                    Research Agent
+                                </span>
+
+                                <h3>
+                                    Market Research
+                                </h3>
+
+
+                                <div class="progress">
+
+                                    <i style="width:45%"></i>
+
+                                </div>
+
+
+                                <small>
+                                    45% complete
+                                </small>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                •••
+                            </button>
+
+                        </article>
+
+
+
+                        <!-- Web -->
+
+                        <article class="work-card">
+
+                            <div class="work-icon">
+                                ◉
+                            </div>
+
+
+                            <div class="work-info">
+
+                                <span>
+                                    Web Agent
+                                </span>
+
+                                <h3>
+                                    Website Optimization
+                                </h3>
+
+
+                                <div class="progress">
+
+                                    <i style="width:60%"></i>
+
+                                </div>
+
+
+                                <small>
+                                    60% complete
+                                </small>
+
+                            </div>
+
+
+                            <button class="more-btn">
+                                •••
+                            </button>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div class="toast"
+         id="toast">
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
